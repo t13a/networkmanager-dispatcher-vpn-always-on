@@ -1,0 +1,15 @@
+SELECTABLE_CONNECTIONS=(
+    # 'VPN1' # default
+    # 'VPN2'
+    # 'VPN3'
+)
+PREFERABLE_DEVICE_PATTERNS=(
+    '^enp' # Ethernet (best)
+    '^wlp' # WiFi
+    '^cdc' # Mobile Broadband (worst)
+)
+
+LOG_FILE=/tmp/vpn-o-matic.log
+RUN_DIR=/run/vpn-o-matic
+CONNECTION_FILE="${RUN_DIR}/connection"
+CONNECTION_LOCK_FILE="${RUN_DIR}/connection.lock"
