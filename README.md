@@ -1,6 +1,6 @@
 
-nm-vpn-o-matic
-==============
+networkmanager-dispatcher-vpn-always-on
+=======================================
 
 About
 -----
@@ -15,11 +15,15 @@ Requirements
 Installation
 ------------
 
-    # cp nm-vpn-o-matic* /etc/NetworkManager/dispatcher.d
-    # chown root:root /etc/NetworkManager/dispatcher.d/nm-vpn-o-matic*
-    # chmod 755 /etc/NetworkManager/dispatcher.d/nm-vpn-o-matic*
-    # ln -s ../nm-vpn-o-matic /etc/NetworkManager/dispatcher.d/pre-down.d/nm-vpn-o-matic
-    # ln -s ../nm-vpn-o-matic.conf /etc/NetworkManager/dispatcher.d/pre-down.d/nm-vpn-o-matic.conf
+    # cp vpn-always-on vpn-always-on.conf /etc/NetworkManager/dispatcher.d
+    #
+    # cd /etc/NetworkManager/dispatcher.d
+    # chown root:root vpn-always-on vpn-always-on.conf
+    # chmod 755 vpn-always-on vpn-always-on.conf
+    #
+    # cd /etc/NetworkManager/dispatcher.d/pre-down.d
+    # ln -s ../vpn-always-on .
+    # ln -s ../vpn-always-on.conf .
 
 License
 -------
