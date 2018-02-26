@@ -9,7 +9,7 @@ PREFERABLE_DEVICE_PATTERNS=(
     '^cdc' # Mobile Broadband (worst)
 )
 
-LOG_FILE=/tmp/vpn-o-matic.log
-RUN_DIR=/run/vpn-o-matic
+LOG_FILE=/tmp/vpn-always-on.log
+RUN_DIR=/run/vpn-always-on
 CONNECTION_FILE="${RUN_DIR}/connection"
 CONNECTION_LOCK_FILE="${RUN_DIR}/connection.lock"
