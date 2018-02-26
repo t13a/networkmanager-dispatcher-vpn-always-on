@@ -24,8 +24,3 @@ Installation
     # cd /etc/NetworkManager/dispatcher.d/pre-down.d
     # ln -s ../vpn-always-on .
     # ln -s ../vpn-always-on.conf .
-
-License
--------
-
-TODO
